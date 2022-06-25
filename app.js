@@ -1,6 +1,3 @@
-// Test if file is working
-console.log("Hello World");
-
 // Declare Article Data as Json
 const data = [
   {
@@ -24,7 +21,7 @@ const DisplayPosts = document.querySelector(".display-posts");
 
 const HeaderData = [
   `<div class="logo">
-<div class="img">Technical Shampy</div>
+<a href="#" class="img">Technical Shampy</a>
 </div>
 <ul class="nav-list">
 <li><a class="nav-links" href="#">Home</a></li>
@@ -53,4 +50,4 @@ if (DisplayPosts) {
     console.log(data);
   };
   addArticle();
-} else console.error("DisplayPosts Element not found");
+} else console.error("Any Element not found having DisplayPosts Class.");

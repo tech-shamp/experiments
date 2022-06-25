@@ -1,15 +1,11 @@
 /* Fonts Import */
 @font-face {
   font-family: "Poppins";
-  src: url(./fonts/Poppins-Thin.ttf);
+  src: url(./fonts/Poppins-Bold.ttf);
 }
 @font-face {
-  font-family: "Ubuntu";
-  src: url(./fonts/Ubuntu-Bold.ttf);
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url(./fonts/WorkSans-ExtraLight.ttf);
+  font-family: "Lato Light";
+  src: url(./fonts/Lato-Light.ttf);
 }
 
 /* Variables */
@@ -56,6 +52,7 @@ a {
   position: fixed;
   top: 0;
 
+  font-family: "Poppins";
   line-height: 3.6rem;
   width: 100%;
   height: 6rem;
@@ -75,15 +72,6 @@ a {
   padding: 0 1.2rem;
   position: relative;
 }
-/* .nav-links:hover::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 80%;
-  height: 2px;
-  background-color: #721984;
-  animation: HoverEffect 0.5s cubic-bezier(0.75, 0.44, 1, 1);
-} */
 /* header logo */
 .header .logo {
   color: var(--text);
@@ -98,7 +86,11 @@ a {
   width: 80%;
   height: 2px;
   background-color: #721984;
-  animation: HoverEffect 0.5s cubic-bezier(0.75, 0.44, 1, 1);
+  animation: HoverEffect 0.5s ease-in-out;
+}
+.nav-links:hover::after {
+  left: 1rem;
+  bottom: -0.4rem;
 }
 
 /* Animations */
