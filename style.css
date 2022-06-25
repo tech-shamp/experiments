@@ -1,0 +1,112 @@
+/* Fonts Import */
+@font-face {
+  font-family: "Poppins";
+  src: url(./fonts/Poppins-Thin.ttf);
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url(./fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url(./fonts/WorkSans-ExtraLight.ttf);
+}
+
+/* Variables */
+:root {
+  --Shadow: 0px 6px 15px -2px #000000bd;
+  --bg: #16164b;
+  --text: #c8c8ef;
+  --buttons: #f64c72;
+  --heading: #553d67;
+  --white: #ececec;
+  --hover: #cccccc;
+  --UnderLine-Animation: {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #721984;
+    animation: HoverEffect 0.5s cubic-bezier(0.75, 0.44, 1, 1);
+  }
+}
+/* Universal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+li {
+  list-style: none;
+  color: var(--text);
+}
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+
+  line-height: 3.6rem;
+  width: 100%;
+  height: 6rem;
+  padding: 0 10rem;
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg);
+  box-shadow: var(--Shadow);
+  transition: all 0.5s linear;
+}
+.nav-list {
+  display: flex;
+}
+.nav-links {
+  padding: 0 1.2rem;
+  position: relative;
+}
+/* .nav-links:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  height: 2px;
+  background-color: #721984;
+  animation: HoverEffect 0.5s cubic-bezier(0.75, 0.44, 1, 1);
+} */
+/* header logo */
+.header .logo {
+  color: var(--text);
+  position: relative;
+}
+.header .logo:hover::after,
+.nav-links:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+  height: 2px;
+  background-color: #721984;
+  animation: HoverEffect 0.5s cubic-bezier(0.75, 0.44, 1, 1);
+}
+
+/* Animations */
+@keyframes HoverEffect {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
