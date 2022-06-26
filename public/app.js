@@ -1,6 +1,6 @@
 // Declare Article Data as Json
-import data from "./articles.js";
-import header from "./components/header.js";
+import data from "./js/articles.js";
+import header from "../components/header.js";
 
 // Components
 const Header = document.querySelector(".header");
