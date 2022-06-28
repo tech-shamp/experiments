@@ -10,14 +10,17 @@
 
 /* Variables */
 :root {
-  --Shadow: 2px 6px 10px #000000cc;
-  --bg: #16164b;
-  --text: #c8c8ef;
-  --buttons: #f64c72;
-  --heading: #553d67;
-  --white: #ececec;
+  --Shadow: 0px 1px 9px #000000cc;
+  --bg: var(--grey); /* #16164b */
+  --text: #c5c6c7;
+  --buttons: #45a29e;
+  --heading: #66fcf1;
+  --white: #fff;
+  --black: #0b0c10;
+  --grey: #1f2833;
+  --grey-light: #a8a8a8;
   --hover: #cccccc;
-  --css-loader: #16164b;
+  --css-loader: #45a29e;
   --UnderLine-Animation: {
     transition: all 0.3s ease;
     cursor: pointer;
@@ -93,7 +96,7 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: var(--bg);
-  box-shadow: var(--Shadow);
+  /* box-shadow: var(--Shadow); */
   transition: all 0.5s linear;
   z-index: 2;
 }
@@ -118,21 +121,12 @@ a {
   bottom: 0;
   width: 80%;
   height: 2px;
-  background-color: #721984;
+  background-color: var(--css-loader);
   animation: HoverEffect 0.5s ease-in-out;
 }
 .nav-links:hover::after {
   left: 1rem;
   bottom: -0.4rem;
-}
-
-/* blog */
-.blog-card {
-  width: 65%;
-  height: 65%;
-  background-color: #fff;
-  padding: 3.2rem;
-  margin: 4.8rem;
 }
 .loader {
   position: absolute;
@@ -141,7 +135,7 @@ a {
   width: 100px;
   height: 100px;
   margin: -76px 0 0 -76px;
-  border: 10px solid rgb(126, 126, 126);
+  border: 10px solid var(--grey-light);
   border-radius: 50%;
   background: transparent;
   border-top-color: var(--css-loader);
@@ -150,6 +144,7 @@ a {
   z-index: 9;
 }
 
+/* Templates */
 /* 404 Template */
 #notfound {
   position: relative;
