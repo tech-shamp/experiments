@@ -13,7 +13,7 @@
   --Shadow: 0px 1px 9px #000000cc;
   --bg: var(--grey); /* #16164b */
   --text: #cecfd0;
-  --buttons: #45a29e;
+  --buttons: linear-gradient(90deg, #45a19c 0%, #64fcf2 100%);
   --heading: #66fcf1;
   --white: #fff;
   --black: #0b0c10;
@@ -95,7 +95,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--bg);
+  background: var(--bg);
   /* box-shadow: var(--Shadow); */
   transition: all 0.5s linear;
   z-index: 2;
